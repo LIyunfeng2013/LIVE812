@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  LIVE812x
+
+  Created by loop on 2020/06/30.
+  Copyright © 2020 loop. All rights reserved.
+*/
+"LANGUAGE" = "Language";
+///Tabber的显示文字
+"HOME" = "Home";
+"FIND" = "Find";
+"CAMERA" = "Camera";
+"FAVOR" = "Favor";
+"ME" = "Me";
+///提示三剑客
+"REMIND" = "Remind";
+"OK" = "OK";
+"CANCEL" = "Cancel";

@@ -1,0 +1,30 @@
+
+platform :ios, '13.0'
+
+target 'LIVE812x' do
+  use_frameworks!
+  pod "ESTabBarController-swift"
+  pod 'Localize-Swift'
+  
+  pod 'Alamofire'
+  pod 'Moya'
+  pod 'SwiftyJSON'
+  
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'Moya/RxSwift'    # 用于网络请求
+  pod 'RxDataSources'  # RxSwift中用于设置UITableView/UICollectionView data sources
+  
+  pod 'SnapKit'
+  pod 'IQKeyboardManagerSwift'
+  pod 'Kingfisher'      # SDWebImage swift 版
+
+  pod 'secp256k1.swift', '~> 0.1.4'
+  pod 'HDWalletKit'
+  
+  pod 'SCLAlertView'
+  pod 'DefaultsKit'
+  
+  
+  pod 'ImagePicker'
+end

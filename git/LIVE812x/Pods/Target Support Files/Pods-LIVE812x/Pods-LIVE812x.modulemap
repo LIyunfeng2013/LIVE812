@@ -1,0 +1,6 @@
+framework module Pods_LIVE812x {
+  umbrella header "Pods-LIVE812x-umbrella.h"
+
+  export *
+  module * { export * }
+}

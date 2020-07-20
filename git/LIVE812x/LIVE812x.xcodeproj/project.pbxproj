@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1CEB374B24C3E6960037FCD2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEB374A24C3E6960037FCD2 /* LoginViewController.swift */; };
+		759D994924C540FC0082376B /* UIKit+LExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D994824C540FC0082376B /* UIKit+LExtension.swift */; };
 		75B6BD2C24AB3C68002E5446 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75B6BD2E24AB3C68002E5446 /* Localizable.strings */; };
 		75B6BD3E24AB3E34002E5446 /* FindController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B6BD3D24AB3E34002E5446 /* FindController.swift */; };
 		75B6BD4024AB3E45002E5446 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B6BD3F24AB3E45002E5446 /* CameraController.swift */; };
@@ -52,6 +53,7 @@
 		7545E76524AB3713002F0B69 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		7545E76624AB371B002F0B69 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		7545E76724AB371B002F0B69 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		759D994824C540FC0082376B /* UIKit+LExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+LExtension.swift"; sourceTree = "<group>"; };
 		75B6BD2D24AB3C68002E5446 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		75B6BD2F24AB3C70002E5446 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		75B6BD3024AB3C78002E5446 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -321,6 +323,7 @@
 			children = (
 				75D8645F24AB21BC00D23633 /* Conts.swift */,
 				75D8645424AB1F4C00D23633 /* BaseController.swift */,
+				759D994824C540FC0082376B /* UIKit+LExtension.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -581,6 +584,7 @@
 				75D8646324AB2C9600D23633 /* BaseContentiew.swift in Sources */,
 				75B6BD4024AB3E45002E5446 /* CameraController.swift in Sources */,
 				75D8645524AB1F4C00D23633 /* BaseController.swift in Sources */,
+				759D994924C540FC0082376B /* UIKit+LExtension.swift in Sources */,
 				75B6BD4224AB3E54002E5446 /* FavorController.swift in Sources */,
 				75D8642224AB1CB700D23633 /* AppDelegate.swift in Sources */,
 				75D8645E24AB205F00D23633 /* BaseNavController.swift in Sources */,

@@ -172,6 +172,17 @@ extension UIImage {
         return maskedImage
     }
     
+    ///对指定图片进行拉伸
+    func resizableImage(name: String) -> UIImage {
+        
+        var normal = UIImage(named: name)!
+        let imageWidth = normal.size.width * 0.5
+        let imageHeight = normal.size.height * 0.5
+        normal = resizableImage(withCapInsets: UIEdgeInsets(top: imageHeight, left: imageWidth, bottom: imageHeight, right: imageWidth))
+        
+        return normal
+    }
+    
 }
 
 extension UIImageView {
@@ -304,7 +315,57 @@ extension UIColor {
     func getColor(str:Int,alpha:CGFloat = 1) ->UIColor{
         return UIColor(red:CGFloat((str & 0xFF0000) >> 16) / 255.0,green: CGFloat((str & 0x00FF00) >> 8) / 255.0,blue: CGFloat(str & 0x0000FF) / 255.0,alpha: CGFloat(alpha))
     }
+}
+
+extension String {
+    //是不是中国电话号码
+    func isCHTelNumber(num:NSString)->Bool{
+        let mobile = "^1(3[0-9]|5[0-35-9]|8[025-9])\\d{8}$"
+        let  CM = "^1(34[0-8]|(3[5-9]|5[017-9]|8[278])\\d)\\d{7}$"
+        let  CU = "^1(3[0-2]|5[256]|8[56])\\d{8}$"
+        let  CT = "^1((33|53|8[09])[0-9]|349)\\d{7}$"
+        let regextestmobile = NSPredicate(format: "SELF MATCHES %@",mobile)
+        let regextestcm = NSPredicate(format: "SELF MATCHES %@",CM )
+        let regextestcu = NSPredicate(format: "SELF MATCHES %@" ,CU)
+        let regextestct = NSPredicate(format: "SELF MATCHES %@" ,CT)
+        
+        if ((regextestmobile.evaluate(with: num) == true)
+            || (regextestcm.evaluate(with: num)  == true)
+            || (regextestct.evaluate(with: num) == true)
+            || (regextestcu.evaluate(with: num) == true))
+        {
+            return true
+        }else
+        {
+            return false
+        }
+    }
     
+    // 是否是邮箱
+    func validateEmail() -> Bool {
+        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        return NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: self)
+    }
+    
+    // 是否是3-15位数字
+    func validateMobileNumber() -> Bool {
+        let regex = "^\\d{3,15}$"
+        return NSPredicate(format: "SELF MATCHES %@", regex).evaluate(with: self)
+    }
+    
+    /// 判断是否含有某个字符串
+    func contains(find: String) -> Bool {
+        return self.range(of: find) != nil
+    }
+
+    /// 判断是否含有某个字符串 忽略大小写
+    func containsIgnoringCase(find: String) -> Bool {
+        return self.range(of: find, options: .caseInsensitive) != nil
+    }
+    
+    var isNotEmpty: Bool {
+        return !isEmpty
+    }
 }
 
 

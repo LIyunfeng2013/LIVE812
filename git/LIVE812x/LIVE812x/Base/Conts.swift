@@ -65,6 +65,7 @@ func LScaleFont(_ font:CGFloat) -> (CGFloat) {
     return  LScreenWidth/375*font
 }
 
+
 /*!
  打印内容，并包含类名和打印所在行数
  - Parameters:  泛型，打印对象

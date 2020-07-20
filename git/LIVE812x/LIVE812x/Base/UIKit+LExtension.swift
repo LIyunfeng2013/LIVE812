@@ -294,3 +294,19 @@ extension String {
     }
 }
 
+extension UIColor {
+    //返回一个RGB颜色
+    func getColor(r:CGFloat,g:CGFloat,b:CGFloat,l:CGFloat = 1) ->UIColor{
+        let color = UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: l)
+        return color
+    }
+    //返回一个RGB颜色
+    func getColor(str:Int,alpha:CGFloat = 1) ->UIColor{
+        return UIColor(red:CGFloat((str & 0xFF0000) >> 16) / 255.0,green: CGFloat((str & 0x00FF00) >> 8) / 255.0,blue: CGFloat(str & 0x0000FF) / 255.0,alpha: CGFloat(alpha))
+    }
+    
+}
+
+
+
+

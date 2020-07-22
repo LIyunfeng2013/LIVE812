@@ -8,9 +8,8 @@
 import UIKit
 import Foundation
 import SnapKit
-import CryptoSwift
-import HDWalletKit
 import SCLAlertView
+
 
 
 

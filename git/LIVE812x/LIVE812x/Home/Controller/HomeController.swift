@@ -7,6 +7,13 @@
 //
 
 import UIKit
+import CryptoSwift
+import CryptoEthereumSwift
+
+
+
+
+
 
 class HomeController: BaseController {
 
@@ -17,6 +24,7 @@ class HomeController: BaseController {
         let name: String? = "asdf"
         _ = name!.count
         
+        _ = Mnemonic.create()
         
     }
 }

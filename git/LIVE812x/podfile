@@ -1,6 +1,8 @@
 
 platform :ios, '13.0'
 
+inhibit_all_warnings!
+
 target 'LIVE812x' do
   use_frameworks!
   pod "ESTabBarController-swift"
@@ -21,6 +23,8 @@ target 'LIVE812x' do
 
   pod 'secp256k1.swift', '~> 0.1.4'
   pod 'HDWalletKit'
+  
+
   
   pod 'SCLAlertView'
   pod 'DefaultsKit'

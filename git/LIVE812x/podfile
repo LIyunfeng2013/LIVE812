@@ -20,11 +20,8 @@ target 'LIVE812x' do
   pod 'SnapKit'
   pod 'IQKeyboardManagerSwift'
   pod 'Kingfisher'      # SDWebImage swift 版
-
-  pod 'secp256k1.swift', '~> 0.1.4'
-  pod 'HDWalletKit'
   
-
+  
   
   pod 'SCLAlertView'
   pod 'DefaultsKit'

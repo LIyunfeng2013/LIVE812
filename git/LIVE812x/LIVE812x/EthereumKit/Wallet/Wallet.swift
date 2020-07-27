@@ -1,16 +1,16 @@
-/// Wallet handles all the logic necessary for storing keys
+/// 处理钱包的所有逻辑
 public final class Wallet {
     
-    /// Network which this wallet is connecting to
-    /// Basiclly Mainnet or Ropsten
+    /// 钱包链接的网络
+    /// 基本上是Mainnet或Ropsten
     private let network: Network
     
-    /// Private key which this wallet mainly use.
-    /// This is either provided by user or generated from HD wallet.
-    /// for HD wallet, path is m/44'/coin_type'/0'/0
+    /// 此钱包主要使用的私钥。
+    /// 由用户提供或从HD钱包生成。
+    /// 对于HD钱包，路径为m / 44'/ coin_type'/ 0'/ 0
     private let key: PrivateKey
     
-    /// Represents a flag whether to print a debug log.
+    /// 表示是否打印调试日志的标志。
     private let debugPrints: Bool
     
     public init(seed: Data, network: Network, debugPrints: Bool) throws {

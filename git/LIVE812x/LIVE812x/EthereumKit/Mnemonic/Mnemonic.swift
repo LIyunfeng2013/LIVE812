@@ -34,7 +34,7 @@ public final class Mnemonic {
     }
     
     public static func createSeed(mnemonic: [String], withPassphrase passphrase: String = "") throws -> Data {
-        let words = WordList.english.words + WordList.japanese.words
+        let words = WordList.english.words + WordList.japanese.words + WordList.chinese.words + WordList.korea.words
         guard !mnemonic.map({ words.contains($0) }).contains(false) else {
             throw EthereumKitError.cryptoError(.invalidMnemonic)
         }

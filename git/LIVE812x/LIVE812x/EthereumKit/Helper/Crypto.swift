@@ -60,7 +60,7 @@ public final class Crypto {
     }
     
     /// Signs hash with private key
-    ///
+    /// 
     /// - Parameters:
     ///   - hash: Hash of a message (32-byte data = 256-bit hash)
     ///   - privateKey: serialized private key based on secp256k1 algorithm

@@ -1,12 +1,8 @@
 PODS:
   - Alamofire (5.2.1)
-  - CryptoSwift (1.0.0)
   - DefaultsKit (0.2.0)
   - Differentiator (4.0.1)
   - ESTabBarController-swift (2.8.0)
-  - HDWalletKit (0.3.6):
-    - CryptoSwift (~> 1.0.0)
-    - secp256k1.swift (~> 0.1.4)
   - ImagePicker (3.1.0)
   - IQKeyboardManagerSwift (6.5.5)
   - Kingfisher (5.14.0):
@@ -31,7 +27,6 @@ PODS:
     - RxSwift (~> 5)
   - RxSwift (5.1.1)
   - SCLAlertView (0.8)
-  - secp256k1.swift (0.1.4)
   - SnapKit (5.0.1)
   - SwiftyJSON (5.0.0)
 
@@ -39,7 +34,6 @@ DEPENDENCIES:
   - Alamofire
   - DefaultsKit
   - ESTabBarController-swift
-  - HDWalletKit
   - ImagePicker
   - IQKeyboardManagerSwift
   - Kingfisher
@@ -50,18 +44,15 @@ DEPENDENCIES:
   - RxDataSources
   - RxSwift
   - SCLAlertView
-  - secp256k1.swift (~> 0.1.4)
   - SnapKit
   - SwiftyJSON
 
 SPEC REPOS:
   trunk:
     - Alamofire
-    - CryptoSwift
     - DefaultsKit
     - Differentiator
     - ESTabBarController-swift
-    - HDWalletKit
     - ImagePicker
     - IQKeyboardManagerSwift
     - Kingfisher
@@ -72,17 +63,14 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - SCLAlertView
-    - secp256k1.swift
     - SnapKit
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
-  CryptoSwift: d81eeaa59dc5a8d03720fe919a6fd07b51f7439f
   DefaultsKit: 6c767941b2c3fe34c4d70e300e6c3b80c94964dd
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   ESTabBarController-swift: 05593a6ad64700b03c0eb60ff625916370aa4136
-  HDWalletKit: 6d97a15404b2edfe3418e3dc064faa967e51dac4
   ImagePicker: db1fd7626337b2577c523bef5f499bbbe5a37079
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
   Kingfisher: 7b64389a43139c903ec434788344c288217c792d
@@ -93,10 +81,9 @@ SPEC CHECKSUMS:
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
-  secp256k1.swift: a7e7a214f6db6ce5db32cc6b2b45e5c4dd633634
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 00c64d92c9792acf207e071e0b5d2409d62a7a4b
+PODFILE CHECKSUM: 7123f3267dde992eebad42aa576afd7d3f3cc95d
 
 COCOAPODS: 1.9.3

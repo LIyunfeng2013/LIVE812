@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1CEB374B24C3E6960037FCD2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEB374A24C3E6960037FCD2 /* LoginViewController.swift */; };
+		756DF5B924CE79D500AEE9B7 /* HDWalletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756DF5B824CE79D500AEE9B7 /* HDWalletController.swift */; };
+		756DF5BB24CE7A0100AEE9B7 /* EthereumController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756DF5BA24CE7A0100AEE9B7 /* EthereumController.swift */; };
+		756DF5BD24CEAD8600AEE9B7 /* Chinese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756DF5BC24CEAD8600AEE9B7 /* Chinese.swift */; };
+		756DF5BF24CEAEAA00AEE9B7 /* Korea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756DF5BE24CEAEAA00AEE9B7 /* Korea.swift */; };
 		75941BAE24C82E16002BBF7A /* CryptoEthereumSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75941BAD24C82E16002BBF7A /* CryptoEthereumSwift.framework */; };
 		75941C6524C83CDD002BBF7A /* SMP+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75941C2724C83CDD002BBF7A /* SMP+Extensions.swift */; };
 		75941C6624C83CDD002BBF7A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75941C2824C83CDD002BBF7A /* String+Extension.swift */; };
@@ -106,6 +110,10 @@
 		7545E76524AB3713002F0B69 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		7545E76624AB371B002F0B69 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		7545E76724AB371B002F0B69 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		756DF5B824CE79D500AEE9B7 /* HDWalletController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDWalletController.swift; sourceTree = "<group>"; };
+		756DF5BA24CE7A0100AEE9B7 /* EthereumController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumController.swift; sourceTree = "<group>"; };
+		756DF5BC24CEAD8600AEE9B7 /* Chinese.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chinese.swift; sourceTree = "<group>"; };
+		756DF5BE24CEAEAA00AEE9B7 /* Korea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Korea.swift; sourceTree = "<group>"; };
 		75941BAD24C82E16002BBF7A /* CryptoEthereumSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoEthereumSwift.framework; path = Carthage/Build/iOS/CryptoEthereumSwift.framework; sourceTree = "<group>"; };
 		75941BAF24C82E25002BBF7A /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
 		75941C2724C83CDD002BBF7A /* SMP+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SMP+Extensions.swift"; sourceTree = "<group>"; };
@@ -320,6 +328,8 @@
 				75941C4824C83CDD002BBF7A /* Japanese.swift */,
 				75941C4924C83CDD002BBF7A /* Mnemonic.swift */,
 				75941C4A24C83CDD002BBF7A /* English.swift */,
+				756DF5BC24CEAD8600AEE9B7 /* Chinese.swift */,
+				756DF5BE24CEAEAA00AEE9B7 /* Korea.swift */,
 			);
 			path = Mnemonic;
 			sourceTree = "<group>";
@@ -412,6 +422,8 @@
 			isa = PBXGroup;
 			children = (
 				75B6BD4124AB3E54002E5446 /* FavorController.swift */,
+				756DF5B824CE79D500AEE9B7 /* HDWalletController.swift */,
+				756DF5BA24CE7A0100AEE9B7 /* EthereumController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -752,6 +764,7 @@
 				Base,
 				"zh-Hans",
 				ja,
+				ko,
 			);
 			mainGroup = 75D8641524AB1CB700D23633;
 			productRefGroup = 75D8641F24AB1CB700D23633 /* Products */;
@@ -843,8 +856,6 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LIVE812x/Pods-LIVE812x-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -868,6 +879,7 @@
 				75941C9624C83CDD002BBF7A /* EthereumKitError.swift in Sources */,
 				75941C8724C83CDD002BBF7A /* Transaction.swift in Sources */,
 				75941C6D24C83CDD002BBF7A /* JSONBodySerialization.swift in Sources */,
+				756DF5BD24CEAD8600AEE9B7 /* Chinese.swift in Sources */,
 				75941C7224C83CDD002BBF7A /* HTTPJSONRPCRequest.swift in Sources */,
 				75941C6924C83CDD002BBF7A /* Cancellable.swift in Sources */,
 				75941C9124C83CDD002BBF7A /* ERC20+Contract.swift in Sources */,
@@ -875,6 +887,7 @@
 				75941C9524C83CDD002BBF7A /* Converter.swift in Sources */,
 				75B6BD3E24AB3E34002E5446 /* FindController.swift in Sources */,
 				75941C7524C83CDD002BBF7A /* Batch.swift in Sources */,
+				756DF5B924CE79D500AEE9B7 /* HDWalletController.swift in Sources */,
 				75941C7F24C83CDD002BBF7A /* Japanese.swift in Sources */,
 				75941C8224C83CDD002BBF7A /* SentTransaction.swift in Sources */,
 				75941C7E24C83CDD002BBF7A /* WordList.swift in Sources */,
@@ -885,6 +898,7 @@
 				75941C8A24C83CDD002BBF7A /* Base58Encode.swift in Sources */,
 				75D8645A24AB1FC600D23633 /* HomeController.swift in Sources */,
 				75941C7024C83CDD002BBF7A /* JSONRPCError.swift in Sources */,
+				756DF5BF24CEAEAA00AEE9B7 /* Korea.swift in Sources */,
 				75D8646324AB2C9600D23633 /* BaseContentiew.swift in Sources */,
 				75B6BD4024AB3E45002E5446 /* CameraController.swift in Sources */,
 				75941C8E24C83CDD002BBF7A /* ERC20.swift in Sources */,
@@ -919,6 +933,7 @@
 				75941C7824C83CDD002BBF7A /* JSONRPC.swift in Sources */,
 				75941C7B24C83CDD002BBF7A /* HDPrivateKey.swift in Sources */,
 				75941C8024C83CDD002BBF7A /* Mnemonic.swift in Sources */,
+				756DF5BB24CE7A0100AEE9B7 /* EthereumController.swift in Sources */,
 				75941C8B24C83CDD002BBF7A /* RLP.swift in Sources */,
 				75941C6624C83CDD002BBF7A /* String+Extension.swift in Sources */,
 				75D8646C24AB334800D23633 /* MeController.swift in Sources */,
